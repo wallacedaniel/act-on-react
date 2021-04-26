@@ -1,0 +1,43 @@
+.custom-table {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+
+  .table-wrapper{
+    background: #F4F4F5;
+    height: 500px;
+    min-width: 80%;
+    border-radius: 4px;
+    padding: 10px;
+    border: 2px solid #193661;
+    color: #193661;
+
+    table {
+      width:100%;
+
+      thead {
+        background: #17C1C4;
+
+        th {
+          padding: 10px 0;
+          width: 33%;
+          padding: 14px 0;
+          font-size: 14px;
+        }
+      }
+
+      tbody:before {
+        line-height:1em;
+        content:".";
+        color: #F4F4F5;
+        display:block;
+      }
+
+      tbody tr td {
+        text-align: left;
+        padding: 6px 6px;
+      }
+
+    }
+  }
+}

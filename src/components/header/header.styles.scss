@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  align-items: center;
+  background: #193661;
+  height: 60px;
+  padding: 20px;
+
+  .title {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: #F4F4F5;
+  }
+}
