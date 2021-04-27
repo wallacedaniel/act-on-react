@@ -4,6 +4,8 @@ Hi Team,
 
 Thanks for your consideration for the role!
 
+Run yarn in both the root folder and client folder to install the necessary dependencies.
+
 To launch the express server in http://localhost:5000/api/tables cd into the root directory and enter - npm run server
 
 To launch the React app http://localhost:3000/ cd into the client folder and enter - yarn start
