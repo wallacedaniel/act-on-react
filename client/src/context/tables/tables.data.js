@@ -1,6 +1,6 @@
 const TABLES_DATA = {
 
-  title: 'Act-On Dashboard',
+  title: 'Act-On Dash',
   activeTab: 'Messages',
   data : [
     {
