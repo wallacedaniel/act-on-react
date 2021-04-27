@@ -8,12 +8,14 @@ import './content-container.styles.scss';
 export const ContentContainer = () => {
 
   const [state] = useContext(TablesContext);
-
-  const tabOptions = state.mascots.map(item => item.type);
+  // gathers all item types and reduces to single instance of each
+  const tabOptions = state.data.map(item => item.type);
   const tabs = [...new Set(tabOptions)];
 
-  return <div className='content-container'>
-    <TabsContainer tabs={tabs}></TabsContainer>
-    <CustomTable tableData={state}></CustomTable>
-  </div>;
+  return (
+    <div className='content-container'>
+      <TabsContainer tabs={tabs}></TabsContainer>
+      <CustomTable tableData={state}></CustomTable>
+    </div>
+  );
 };

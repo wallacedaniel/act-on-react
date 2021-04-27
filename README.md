@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Act-On Software React Coding Challenge
+
+Thanks for your consideration in the role.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

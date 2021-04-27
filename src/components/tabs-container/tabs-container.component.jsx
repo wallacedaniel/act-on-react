@@ -4,11 +4,11 @@ import './tabs-container.styles.scss';
 
 export const TabsContainer = ({tabs}) => {
 
-  return <div className='tabs-container'> {
-          tabs.map( (item, index) => (<Tab key={index} item={item} />))
-        }</div>;
+  return (
+    <div className='tabs-container'>
+      {
+        tabs.map( (item, index) => (<Tab key={index} item={item} />))
+      }
+    </div>
+  );
 };
-
-
-// pass in active
-//

@@ -7,14 +7,14 @@ import './App.css';
 
 function App() {
 
-    return(
-      <div className='App'>
-        <Store>
-          <Header></Header>
-          <ContentContainer></ContentContainer>
-        </Store>
-      </div>
-    );
+  return (
+    <div className='App'>
+      <Store>
+        <Header></Header>
+        <ContentContainer></ContentContainer>
+      </Store>
+    </div>
+  );
 }
 
 export default App;

@@ -7,15 +7,15 @@ export const Tab = ({item}) => {
   const [state, setState] = useContext(TablesContext);
 
   const selectTab = (e) => {
-      state.activeTab = e.target.textContent;
 
-      const stateUpdate = Object.create(state);
-
-      setState(stateUpdate);
+    state.activeTab = e.target.textContent;
+    const stateUpdate = Object.create(state);
+    setState(stateUpdate);
   };
 
-  return <div className={`${state.activeTab === item ? 'active' : ''} tab`}>
-
+  return (
+    <div className={`${state.activeTab === item ? 'active' : ''} tab`}>
       <h2 onClick={selectTab}>{item}</h2>
-  </div>
+    </div>
+  );
 };
