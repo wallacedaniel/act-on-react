@@ -2,7 +2,7 @@
 
 Hi Team,
 
-Thanks for your consideration for the role!
+Thanks for your consideration in the role!
 
 Run yarn in both the root folder and client folder to install the necessary dependencies.
 
