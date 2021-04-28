@@ -7,7 +7,7 @@ export const Tab = ({item}) => {
   const [state, setState] = useContext(TablesContext);
 
   const selectTab = (e) => {
-
+    // sets active tab to value of selected tab and creates new object, triggering render
     state.activeTab = e.target.textContent;
     const stateUpdate = Object.create(state);
     setState(stateUpdate);
