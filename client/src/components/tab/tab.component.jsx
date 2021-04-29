@@ -14,8 +14,6 @@ export const Tab = ({item}) => {
   };
 
   return (
-    <div className={`${state.activeTab === item ? 'active' : ''} tab`}>
-      <h2 onClick={selectTab}>{item}</h2>
-    </div>
+      <p className={`${state.activeTab === item ? 'active-page-tab' : ''} page-tab`} onClick={selectTab}>{item}</p>
   );
 };

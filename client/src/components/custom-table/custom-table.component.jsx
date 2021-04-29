@@ -6,7 +6,8 @@ export const CustomTable = ({tableData}) => {
   const data = tableData.data;
   const activeTab = tableData.activeTab;
 
-  // derives appropriate table header categories based on type
+  // derives appropriate table header categories based on tab type
+  // no longer necessary...previous project submission included varieties in category name based on tab type
   let tableKeys;
 
   for (const el of data) {
@@ -24,30 +25,31 @@ export const CustomTable = ({tableData}) => {
     }}
   );
 
+  // returns td values based on position rather than property name. also to handle previous variety in categories
   return (
-    <div className='custom-table'>
-      <div className='table-wrapper'>
-        <table>
-          <thead>
-            <tr>
-              {
-                tableKeys.map(( keyValue, index) => (<th key={index}>{keyValue.toUpperCase()}</th>))
-              }
-            </tr>
-          </thead>
-          <tbody>
+      <table>
+        <thead>
+          <tr>
             {
-              data.map(( item, index) => {
-                let tableRow;
-                (activeTab === item.type) ?
-                (tableRow = <tr key={index}><td>{item[tableKeys[0]]}</td><td>{item[tableKeys[1]]}</td><td>{item[tableKeys[2]]}</td></tr>) :
-                (tableRow = null);
-                return tableRow;
-              })
+              tableKeys.map(( keyValue, index) => (<th className='category' key={index}>{keyValue.toUpperCase()}</th>))
             }
-          </tbody>
-        </table>
-      </div>
-    </div>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            data.map(( item, index) => {
+              let tableRow;
+              (activeTab === item.type) ?
+              (tableRow = <tr key={index}>
+                <td>{item[tableKeys[0]]}</td>
+                <td>{item[tableKeys[1]]}</td>
+                <td>{item[tableKeys[2]]}</td>
+              </tr>) :
+              (tableRow = null);
+              return tableRow;
+            })
+          }
+        </tbody>
+      </table>
   );
 };

@@ -3,7 +3,6 @@ import React, { useContext } from 'react';
 import { TablesContext } from '../../context/tables/tables.context';
 import {TabsContainer} from '../tabs-container/tabs-container.component';
 import {CustomTable} from '../custom-table/custom-table.component';
-import './content-container.styles.scss';
 
 export const ContentContainer = () => {
 
